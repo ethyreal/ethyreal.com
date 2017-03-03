@@ -4,11 +4,14 @@ permalink: /Résumé/
 ---
 
 
-## WORK HISTORY ##
-
-_1999 - PRESENT_
+## Summary ##
 
 Experienced in mobile and web application development, with skills developed via professional projects since 1998. Background includes iOS app development, HTML/CSS site layouts, database-driven web applications, strategic site planning and production design work. Worked with companies of all sizes, from startups to Fortune 500 companies to the US Navy, as well as across industries, from travel to social networks to digital marketing.
+
+
+## Work History ##
+
+_1999 - PRESENT_
 
 
 ### Zillow Group ###
@@ -116,3 +119,34 @@ Lead Programmer
 - Trained and supervised junior programmers
 
 
+## Toolshed ##
+
+A developers skills should not be summed up as a laundry list... one merely grabs the right tool for the job. However I have worked with the following:
+
+### Programming ###
+
+- Mobile
+	- iOS ( iPhone, iPad ), Objective-C, C, C++, Swift, UIKit, Core Animation, Core Graphics, Core Text, Core Data, Cocos2d, UIKit Dynamics, Networking
+
+- Full Stack
+	- Server Side
+		- Ruby ( Rails ), PHP , CFML ( ColdFusion, Railo, OpenBD ).
+	- Database
+		- SQL ( MySql, MSSQL ).
+	- Client Side
+		- Actionscript 3 ( Flex Framework ), Javascript, CSS, XHTML.
+
+### Systems Administration ###
+
+- Linux
+	- Debian Based: Apache 2, Passenger (mod_rails), Tomcat, CFML Servlet Engines ( Adobe ColdFusion, Railo 3.1, Open BD).
+- Windows
+	- Windows Server 2003 / 2008: IIS, MS SQL Server 2005 / 2008, Adobe ColdFusion 7 - 9
+
+### Production Design ###
+
+Adobe PhotoShop
+
+### Additional ###
+
+XCode, GIT & SVN Source Control, MS Office Suite, Various Text Editors, SSH Clients.

@@ -121,6 +121,26 @@ We could even do a step further and drop the type from the instance variable:
 let people = jsonArray.flatMap { Person(json: $0) }
 ```
 
+Since we are flapMapping over a JSON array and returning an array of persons our arrays generic flatMap effectively looks like this:
+
+```swift
+func flatMap(_ transform: (JSONDictionary) -> Person?) -> [Person] {}
+```
+
+Notice the transform closure has the same signature as the Person initializer.  They both take an ```JSONDictionary``` and return an optional ```Person```:
+
+```swift
+extension Person {
+    init?(json:JSONDictionary) {}
+}
+```
+
+Because those signatures have the same argument types and return value regardless of argument labels we can use them interchangeably. So insteady of defining a block to pass to flatMap we can just pass the ```Person.init``` method directly!
+
+```swift
+let people = jsonArray.flatMap(Person.init)
+```
+
 With good meaningful varivables and call site context this is still clear at first glance what is happening.  The irony of using a lot of words to promote less words in code.
 
 

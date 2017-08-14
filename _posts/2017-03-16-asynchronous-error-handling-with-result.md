@@ -4,7 +4,7 @@ date:   2017-03-16 01:30:00 -0800
 categories: swift error functional result
 ---
 
-Handling error's in swift is fairly straighforward.  Let say we have an artist:
+Handling errors in swift is fairly straighforward.  Let say we have an artist:
 
 ```swift
 struct Artist {
@@ -50,7 +50,7 @@ do {
 
 What happens though when we need to load artists?  Most likely that will take time, either querying a local database or fetching from a network.  Eitherway we would normally wind of with an API using a callback that provides the requested resource and an error:
 
-```
+```swift
 class ArtistService {
     
     func artists(completion: ([Artist]?, Error?) -> Void) {
@@ -62,7 +62,7 @@ class ArtistService {
 
 Safely handling this always feels awkward though because even since we are using two optional values to represent this we actually have four possible states:
 
-```
+```swift
 service.artists { (artists, error) in
 
     if error != nil, artists == nil {
@@ -80,9 +80,9 @@ service.artists { (artists, error) in
 }
 ```
 
-This seems too complicated.  What we really want to represent is just two states here: success and failure.  Luckily swift provides enums to the reseue!  Enums are basically swifts implemetation of a Sum Type of [Tagged Union](https://en.wikipedia.org/wiki/Tagged_union).  We start simple and build one just for our artists request:
+This seems too complicated.  What we really want to represent is just two states here: success and failure.  Luckily swift provides enums to the reseue!  Enums are basically swifts implemetation of a Sum Type or [Tagged Union](https://en.wikipedia.org/wiki/Tagged_union).  We start simple and build one just for our artists request:
 
-```
+```swift
 enum ArtistsResult {
     
     case failure(Error)
@@ -92,7 +92,7 @@ enum ArtistsResult {
 
 Update our service to use our fancy result:
 
-```
+```swift
 class ArtistService {
     
     func artists(completion: (ArtistsResult) -> Void) {
@@ -103,7 +103,7 @@ class ArtistService {
 
 Now using it we can cleanly just deal with two possible outcomes:
 
-```
+```swift
 service.artists { result in
     switch result {
     case .failure( let error ):
@@ -117,7 +117,7 @@ service.artists { result in
 
 I feel good about this! no edge cases, cleanly handle two possible options.  It doesn't seem very resuable though, it only handles an array of artists.  We could add another result for a single artist right?
 
-```
+```swift
 enum ArtistResult {
     
     case failure(Error)
@@ -127,7 +127,7 @@ enum ArtistResult {
 
 But then we are defining an enum each time we want to handle another asynchronous operation that seems just as bad as handling all the cases of two seperatate types in the if/else soup.  If the type could be generic over all possible successes than we'd be in business:
 
-```
+```swift
 enum Result<T> {
     
     case failure(Error)
@@ -137,7 +137,7 @@ enum Result<T> {
 
 Our signature and call site look similar:
 
-```
+```swift
 class ArtistService {
     
     func artists(completion: (Result<[Artist]>) -> Void) {
@@ -156,7 +156,7 @@ service.artists { result in
 }
 ```
 
-Now we have a ```Result<T>``` type we can reuse for all our asynchronous error handling!  It explicitly defines two possile options and each option can be clearly handled using a simple case statement.
+Now we have a ```swift Result<T>``` type we can reuse for all our asynchronous error handling!  It explicitly defines two possile options and each option can be clearly handled using a simple case statement.
 
 Many others have [written](https://www.cocoawithlove.com/blog/2016/08/21/result-types-part-one.html) and [spoken](http://2014.funswiftconf.com/speakers/john.html) in great detail about using ```Result``` for fun an profit
 

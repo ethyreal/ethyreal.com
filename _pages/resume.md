@@ -6,7 +6,7 @@ permalink: /Résumé/
 
 ## Summary ##
 
-Experienced in mobile and web application development, with skills developed via professional projects since 1998. Background includes iOS app development, HTML/CSS site layouts, database-driven web applications, strategic site planning and production design work. Worked with companies of all sizes, from startups to Fortune 500 companies to the US Navy, as well as across industries, from travel to social networks to digital marketing.
+Passionate software engineer with extensive experience in mobile and web application development.  Strong desire to work with great people to build amazing products backed by clean code.
 
 
 ## Work History ##
@@ -18,6 +18,11 @@ _1999 - PRESENT_
 _2/16 - Present_
 
 Senior iOS Engineer
+
+- Improved performance and reliability of the Premier Agent app significantly, rating increased from 2.0 to 4.7 stars
+- Built key features for the Agent app, making it one of the most competitive real estate CRMs.
+- Rewrote core architecture components (Data, Networking, Routing)
+- Mentored team through code review, pair programming and book clubs
 
 [premieragent.zillow.com](http://premieragent.zillow.com), [Premier Agent App](https://itunes.apple.com/us/app/premier-agent-power-zillow/id489692273?mt=8&ign-mpt=uo%3D4)
 
@@ -104,7 +109,7 @@ _3/01 - 3/02_
 
 Programmer
 
-- Developed On-Line Inventory Management System for Hotels
+- Developed inventory management system for hotels
 - Programmed modular content management applications
 - Managed remote servers for client websites
 
@@ -114,7 +119,7 @@ _8/99 - 8/00_
 
 Lead Programmer
 
-- Development of Dynamic Content Delivery Software
+- Development of dynamic content delivery software
 - Managed strategic programming for Fortune 500 websites
 - Trained and supervised junior programmers
 

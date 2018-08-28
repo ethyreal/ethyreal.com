@@ -13,10 +13,12 @@ Passionate software engineer with extensive experience in mobile and web applica
 
 _1999 - PRESENT_
 
-
 ### Zillow Group ###
-_2/16 - Present_
 
+_7/18 - Present_  
+Principal Software Engineer
+
+_2/16 - 7/18_  
 Senior iOS Engineer
 
 - Improved performance and reliability of the Premier Agent app significantly, rating increased from 2.0 to 4.7 stars
@@ -28,8 +30,8 @@ Senior iOS Engineer
 
 
 ### Roambi (Mellmo Inc) ###
-_7/15 - 1/16_
 
+_7/15 - 1/16_  
 Senior iOS Developer
 
 - Overhauled Roambi Analytics UI to support adaptive layouts taking full advantage of split view and multitasking features of new iOS devices
@@ -39,8 +41,8 @@ Senior iOS Developer
 
 
 ### Tealium Inc ###
-_7/14 - 7/15_
 
+_7/14 - 7/15_   
 Mobile Software Engineer
 
 - Architected mobile library solutions for Tealium web products
@@ -51,8 +53,8 @@ Mobile Software Engineer
 
 
 ### Mobile Systems Inc ###
-_6/12 - 7/14_
 
+_6/12 - 7/14_  
 iOS Developer
 
 - Created custom editor for Microsoft Word documents
@@ -63,8 +65,7 @@ iOS Developer
 
 
 ### Mobile Development Consultant ###
-_1/11 - 6/12_
-
+_1/11 - 6/12_  
 Freelance iOS & Web Developer
 
 - Created iOS application for controlling & monitoring home appliances
@@ -75,8 +76,7 @@ Freelance iOS & Web Developer
 
 
 ### Silvergate Software ### 
-_3/08 - 8/11_
-
+_3/08 - 8/11_  
 Application Developer
 
 - Implemented online logistical management solutions
@@ -85,8 +85,7 @@ Application Developer
 
 
 ### BlastGroups.com ### 
-_4/07 - 1/08_
-
+_4/07 - 1/08_  
 Web Developer
 
 - Developed object-oriented, database-driven social networking application
@@ -95,8 +94,7 @@ Web Developer
 
 
 ### The Marketing Team LLC ### 
-_10/05 - 3/07_
-
+_10/05 - 3/07_  
 Web Developer
 
 - Produced web standards based websites
@@ -105,8 +103,7 @@ Web Developer
 
 
 ### Thinkbug Interactive Inc ### 
-_3/01 - 3/02_
-
+_3/01 - 3/02_  
 Programmer
 
 - Developed inventory management system for hotels
@@ -115,8 +112,7 @@ Programmer
 
 
 ### Intelli.com ### 
-_8/99 - 8/00_
-
+_8/99 - 8/00_  
 Lead Programmer
 
 - Development of dynamic content delivery software

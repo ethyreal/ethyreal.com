@@ -1,15 +1,15 @@
 ---
 title:  "Development Tools"
-date:   2014-08-14 08:01:00 -0800
+date:   2018-08-14 08:01:00 -0800
 categories: mac software development tools
 ---
 
+I recently had to update my machine and realized I never really had a list of tools that I use.  I would reach for a tool and when it wasn't there go and install it.  There are likely many more robust lists of ios/mac software tools out there but these are the ones I find myself using at least once a month if not daily.
 
 ### Editors
 
-- [Xcode](https://developer.apple.com/xcode/)
-- [BBEdit](https://www.barebones.com/products/bbedit/)
-
+- [Xcode](https://developer.apple.com/xcode/) gets better and better each year.  I've flirted with [AppCode](https://www.jetbrains.com/objc/) a few times but always go back to Xcode.  Since the rewrite of the core engine in swift the editor has really grown into a proper IDE with most of the conveniences of a Jetbrains quality product.
+- [VSCode](https://code.visualstudio.com) strikes that balance beteen text editor and IDE that I'm growing to appreciate more and more each day.  For most of my non apple platform writing I tend to lean on VSCode.
 
 ### Source Control
 

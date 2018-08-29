@@ -16,10 +16,14 @@ I recently had to update my machine and realized I never really had a list of to
 - [Tower](https://www.git-tower.com) git client that has saved me countless hours.
 - [Kaleidoscope](https://www.kaleidoscopeapp.com) beautiful diff and merge tool.
 
+### API Tools/Proxies
+
+- [Charles](https://www.charlesproxy.com) HTTP proxy, invaluable for debugging networking in apps.  The addition of an [iOS app](https://itunes.apple.com/us/app/charles-proxy/id1134218562?mt=8) makes on device debuging that much easier. 
+- [Postman](https://www.getpostman.com) is a great for exploring, document and debuging API calls
+
 ### Utilities
 
 - [SimPholders](https://simpholders.com) for easy inspecting of the installed app bundles on iOS simulators.  Integrates nicely when used with [FUSE](osxfuse.github.io).
-- [Charles](https://www.charlesproxy.com) HTTP proxy, invaluable for debugging networking in apps.
 - [Soulver](https://acqualia.com/soulver/) easy calculations, faster than a spreadsheet, more powerful than a calculator.
 - [iStat Menus](https://bjango.com/mac/istatmenus/) monitors and records your mac's performance.  Between Xcode and the legion of electron apps invading the mac its hard to know what is slowing your machine down.
 

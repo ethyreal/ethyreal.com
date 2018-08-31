@@ -131,7 +131,7 @@ A developers skills should not be summed up as a laundry list... one merely grab
 
 - Full Stack
 	- Server Side
-		- Ruby ( Rails ), PHP , CFML ( ColdFusion, Railo, OpenBD ).
+		- Python, Ruby, PHP , CFML ( ColdFusion, Railo, OpenBD ).
 	- Database
 		- SQL ( MySql, MSSQL ).
 	- Client Side

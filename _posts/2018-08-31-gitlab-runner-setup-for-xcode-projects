@@ -1,15 +1,14 @@
 ---
 title: "Setup Gitlab Runner for an Xcode Project"
 date: 2018-08-31 07:24:00 -0800
-categories: continious-integration mac xcode 
+categories: continious-integration gitlab mac xcode gitlab 
 ---
 
-
-Setup a gitab runner on a mac
+Setup a gitab runner on a mac is fairly straightforward and the [official documentation](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/osx.md) is actually quite good.
+It does involve bouncing around a few places and looking someome things up.  
+After setting up the nth runner myself I wanted to list all the steps I took in one place, and if I'm being honest I really should write a script automate this process if I keep doing it.  
 
 ### Download
-
-[Official instructions](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/osx.md)
 
 Currently there is no easy one liner like ```brew install gitab-runner``` we can run to get this up and running.
 But it's easy to do what homebrew might do for us, we can download the latest gitab-runner binary to ```/usr/local/bin``` using curl:
@@ -47,7 +46,7 @@ So if we have a job call ```unit_tests``` and it has a tag ```ios_ci``` if we wa
 
 Last step is choosing how the runner will execute.  Currently the only way I know of to run CI is through executing ```xcode-build``` via the shell so we'll choose ```shell``` from the list of options.
 
-Now that its all regestured we start it up and it's good to go:
+Now that its all registered we can start it up and it's good to go:
 
 ```sh
 gitlab-runner start
@@ -55,3 +54,4 @@ gitlab-runner start
 
 We can verify this by going back to our CI settings in our gitlab project.  
 If we expand runners there we should see our new runner listed with a green light icon next to it.
+

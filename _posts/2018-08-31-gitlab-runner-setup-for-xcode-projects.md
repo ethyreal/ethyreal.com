@@ -4,7 +4,7 @@ date: 2018-08-31 07:24:00 -0800
 categories: continious-integration gitlab mac xcode gitlab 
 ---
 
-Setup a gitab runner on a mac is fairly straightforward and the [official documentation](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/osx.md) is actually quite good.
+Setting up a gitab runner on a mac is fairly straightforward and the [official documentation](https://gitlab.com/gitlab-org/gitlab-runner/blob/master/docs/install/osx.md) is actually quite good.
 It does involve bouncing around a few places and looking someome things up.  
 After setting up the nth runner myself I wanted to list all the steps I took in one place, and if I'm being honest I really should write a script automate this process if I keep doing it.  
 

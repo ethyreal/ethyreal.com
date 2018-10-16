@@ -8,7 +8,7 @@ For many years of iOS development each team I have worked with has adobted a sty
 
 Key takeaways for me are:
 
-- Favor clearity at the call site
+- Favor clarity at the call site
 - Say more with less
 
 The second point for me is the trickiest.  Comming from Cocoa API's brevity and clarity seem in opposition.  However by removing needless words, adding call site context and learning Swift's new vocabulary we can actually "Say more with less".

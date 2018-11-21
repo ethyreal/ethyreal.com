@@ -18,6 +18,11 @@ _1999 - PRESENT_
 _7/18 - Present_  
 Principal Software Engineer
 
+- Pioneered and championed source control and CI/CD system changes, improving code quality and CI/CD pipelines across the organization
+- Established a mobile CI/CD pipeline  
+- Built automation tools saving several hours of manual QA time a week Contributed to weekly technical book and video clubs up-leveling engineers across multiple teams 
+- Participated in technical leadership discussions and planing directing of division's engineering organization
+
 _2/16 - 7/18_  
 Senior iOS Engineer
 

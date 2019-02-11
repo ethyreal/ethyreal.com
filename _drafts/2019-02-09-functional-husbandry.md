@@ -39,7 +39,7 @@ shout("send in the clowns") // "SEND IN THE CLOWNS!"
  function calls. Without compose, the above would read:
 
 ```swift
-let shout2 = { (x:String) in exclaim(toUpperCase(x)) }
+let shout = { (x:String) in exclaim(toUpperCase(x)) }
 ```
 
  Instead of inside to outside, we run right to left, which I suppose is a step
@@ -116,29 +116,23 @@ loudLastUpper(arg) // 'UPPERCUT!
  Let's play with refactoring our previous example:
 
 ```swift
-let loudLastUpper2 = exclaim <<< toUpperCase <<< head <<< reverse
+let loudLastUpper = exclaim <<< toUpperCase <<< head <<< reverse
 
 // -- or ---------------------------------------------------------------
 
-let last2 = head <<< reverse
-let loudLastUpper3 = exclaim <<< toUpperCase <<< last
+let last = head <<< reverse
+let loudLastUpper = exclaim <<< toUpperCase <<< last
 
 // -- or ---------------------------------------------------------------
 
-let last3 = head <<< reverse
+let last = head <<< reverse
 let angry = exclaim <<< toUpperCase
-let loudLastUpper4 = angry <<< last
-
-// They all still work!
-loudLastUpper(arg) // 'UPPERCUT!
-loudLastUpper2(arg) // 'UPPERCUT!
-loudLastUpper3(arg) // 'UPPERCUT!
-loudLastUpper4(arg) // 'UPPERCUT!
+let loudLastUpper = angry <<< last
 ```
 
  There's no right or wrong answers - we're just plugging our legos together in
  whatever way we please. Usually it's best to group things in a reusable way like
- `last` and `angry`. If familiar with Fowler's "[Refactoring][refactoring-book]",
- one might recognize this process as "[extract function][extract-function-refactor]"
+ `last` and `angry`. If familiar with Fowler's "[Refactoring](https://martinfowler.com/books/refactoring.html)",
+ one might recognize this process as "[extract function](https://refactoring.com/catalog/extractFunction.html)"
  ...except without all the object state to worry about.
 

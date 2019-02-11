@@ -19,6 +19,7 @@ func <<< <A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C
 ```
 
 ... Don't be scared! This is the level-9000-super-Saiyan-form of _compose_. For the sake of reasoning, let's drop the infix implementation and consider a simpler form that can compose two functions together. Once you get your head around that, you can push the abstraction further and consider it simply works for any number of functions (we could even prove that)!
+
 Here's a more friendly _compose_ for you my dear readers:
 
 ```swift
@@ -31,9 +32,7 @@ func compose<A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -
 
  `f` and `g` are functions and `x` is the value being "piped" through them.
 
- Composition feels like function husbandry.
- You, breeder of functions, select two with traits you'd like to combine and
- mash them together to spawn a brand new one. Usage is as follows:
+ Composition feels like function husbandry. You, breeder of functions, select two with traits you'd like to combine and mash them together to spawn a brand new one. Usage is as follows:
 
 ```swift
 let toUpperCase = { (x:String) in x.uppercased() }
@@ -43,22 +42,15 @@ let shout = compose(exclaim, toUpperCase)
 shout("send in the clowns") // "SEND IN THE CLOWNS!"
 ```
 
- The composition of two functions returns a new function.
- This makes perfect sense: composing two units of some type (in this case function)
- should yield a new unit of that very type. You don't plug two legos together and
- get a lincoln log. There is a theory here, some underlying law that we will
- discover in due time.
+ The composition of two functions returns a new function. This makes perfect sense: composing two units of some type (in this case function) should yield a new unit of that very type. You don't plug two legos together and get a lincoln log. There is a theory here, some underlying law that we will discover in due time.
 
- In our definition of `compose`, the `g` will run before the `f`, creating a
- right to left flow of data. This is much more readable than nesting a bunch of
- function calls. Without compose, the above would read:
+ In our definition of `compose`, the `g` will run before the `f`, creating a right to left flow of data. This is much more readable than nesting a bunch of function calls. Without compose, the above would read:
 
 ```swift
 let shout = { (x:String) in exclaim(toUpperCase(x)) }
 ```
 
- Instead of inside to outside, we run right to left, which I suppose is a step
- in the left direction (boo!). Let's look at an example where sequence matters:
+ Instead of inside to outside, we run right to left, which I suppose is a step in the left direction (boo!). Let's look at an example where sequence matters:
 
 ```swift
 func head(_ x:[String]) -> String {
@@ -74,21 +66,15 @@ let last = compose(head, reverse)
 last(["jumpkick", "roundhouse", "uppercut"]) // "uppercut"
 ```
 
- `reverse` will turn the list around while `head` grabs the initial item.
- This results in an effective, albeit inefficient, `last` function.
- The sequence of functions in the composition should be apparent here.
- We could define a left to right version, however, we mirror the mathematical
- version much more closely as it stands. That's right, composition is straight
- from the math books. In fact, perhaps it's time to look at a property
- that holds for any composition.
+ `reverse` will turn the list around while `head` grabs the initial item. This results in an effective, albeit inefficient, `last` function. The sequence of functions in the composition should be apparent here. We could define a left to right version, however, we mirror the mathematical version much more closely as it stands. That's right, composition is straight
+from the math books. In fact, perhaps it's time to look at a property that holds for any composition.
 
 ```swift
  // associativity
  compose(f, compose(g, h)) === compose(compose(f, g), h)
 ```
 
- Composition is associative, meaning it doesn't matter how you group two of them.
- So, should we choose to uppercase the string, we can write:
+ Composition is associative, meaning it doesn't matter how you group two of them. So, should we choose to uppercase the string, we can write:
 
 ```swift
 compose(toUpperCase, compose(head, reverse))
@@ -96,8 +82,7 @@ compose(toUpperCase, compose(head, reverse))
 compose(compose(toUpperCase, head), reverse)
 ```
 
- Since it doesn't matter how we group our calls to compose, the result will be the same.
- That allows us to use our infix verson of our compose method:
+ Since it doesn't matter how we group our calls to compose, the result will be the same. That allows us to use our infix verson of our compose method:
 
 ```swift
 // previously we'd have to write two composes, but since it's associative,
@@ -111,12 +96,9 @@ lastUpper(arg) // 'UPPERCUT'
 loudLastUpper(arg) // 'UPPERCUT!
 ```
 
- Applying the associative property gives us this flexibility and
- peace of mind that the result will be equivalent.
+ Applying the associative property gives us this flexibility and peace of mind that the result will be equivalent.
 
- One pleasant benefit of associativity is that any group of functions can be
- extracted and bundled together in their very own composition.
- Let's play with refactoring our previous example:
+ One pleasant benefit of associativity is that any group of functions can be extracted and bundled together in their very own composition. Let's play with refactoring our previous example:
 
 ```swift
 let loudLastUpper = exclaim <<< toUpperCase <<< head <<< reverse
@@ -133,9 +115,5 @@ let angry = exclaim <<< toUpperCase
 let loudLastUpper = angry <<< last
 ```
 
- There's no right or wrong answers - we're just plugging our legos together in
- whatever way we please. Usually it's best to group things in a reusable way like
- `last` and `angry`. If familiar with Fowler's "[Refactoring](https://martinfowler.com/books/refactoring.html)",
- one might recognize this process as "[extract function](https://refactoring.com/catalog/extractFunction.html)"
- ...except without all the object state to worry about.
+ There's no right or wrong answers - we're just plugging our legos together in whatever way we please. Usually it's best to group things in a reusable way like `last` and `angry`. If familiar with Fowler's "[Refactoring](https://martinfowler.com/books/refactoring.html)", one might recognize this process as "[extract function](https://refactoring.com/catalog/extractFunction.html)" ...except without all the object state to worry about.
 

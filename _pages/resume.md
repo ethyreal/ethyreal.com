@@ -24,7 +24,7 @@ Principal Software Engineer
 - Participated in technical leadership discussions and planing directing of division's engineering organization
 
 _2/16 - 7/18_  
-Senior iOS Engineer
+Senior Software Engineer
 
 - Improved performance and reliability of the Premier Agent app significantly, rating increased from 2.0 to 4.7 stars
 - Built key features for the Agent app, making it one of the most competitive real estate CRMs.

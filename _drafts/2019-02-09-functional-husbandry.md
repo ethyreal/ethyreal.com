@@ -7,9 +7,24 @@ categories: composition functional
 Here's _compose_ :
 
 ```swift
+precedencegroup BackwardsComposition {
+    associativity: left
+}
+
+infix operator <<<: BackwardsComposition
+
+func <<< <A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C {
+    return { x in g(f(x)) }
+}
+```
+
+... Don't be scared! This is the level-9000-super-Saiyan-form of _compose_. For the sake of reasoning, let's drop the infix implementation and consider a simpler form that can compose two functions together. Once you get your head around that, you can push the abstraction further and consider it simply works for any number of functions (we could even prove that)!
+Here's a more friendly _compose_ for you my dear readers:
+
+```swift
 func compose<A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C {
-    return { a in
-        g(f(a))
+    return { x in
+        g(f(x))
     }
 }
 ```
@@ -82,21 +97,9 @@ compose(compose(toUpperCase, head), reverse)
 ```
 
  Since it doesn't matter how we group our calls to compose, the result will be the same.
- That allows us to write an infix verson of our method compose method:
-
- EDIT: instead of variadic compose, create an infix function to backwoards compose
+ That allows us to use our infix verson of our compose method:
 
 ```swift
-precedencegroup BackwardsComposition {
-    associativity: left
-}
-
-infix operator <<<: BackwardsComposition
-
-func <<< <A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C {
-    return compose(g, f)
-}
-
 // previously we'd have to write two composes, but since it's associative,
 // we can give compose as many fn's as we like and let it decide how to group them.
 

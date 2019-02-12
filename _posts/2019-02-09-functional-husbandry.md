@@ -15,8 +15,8 @@ precedencegroup BackwardsComposition {
 
 infix operator <<<: BackwardsComposition
 
-func <<< <A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C {
-    return { x in g(f(x)) }
+func <<< <A, B, C>(_ f: @escaping (B) -> C, _ g: @escaping (A) -> B) -> (A) -> C {
+    return { x in f(g(x)) }
 }
 ```
 
@@ -25,12 +25,13 @@ func <<< <A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C
 Here's a more friendly _compose_ for you my dear readers:
 
 ```swift
-func compose<A, B, C>(_ g: @escaping (B) -> C, _ f: @escaping (A) -> B) -> (A) -> C {
+func compose<A, B, C>(_ f: @escaping (B) -> C, _ g: @escaping (A) -> B) -> (A) -> C {
     return { x in
-        g(f(x))
+        f(g(x))
     }
 }
 ```
+
 `f` and `g` are functions and `x` is the value being "piped" through them.  The generics `A`, `B` and `C` allow both `f` and `g` to transform any type into any other preserving type safety.
 
  Composition feels like function husbandry. You, breeder of functions, select two with traits you'd like to combine and mash them together to spawn a brand new one. Usage is as follows:

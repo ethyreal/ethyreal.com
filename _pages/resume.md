@@ -18,10 +18,10 @@ _1999 - PRESENT_
 _7/18 - Present_  
 Principal Software Engineer
 
-- Pioneered and championed source control and CI/CD system changes, improving code quality and CI/CD pipelines across the organization
-- Established a mobile CI/CD pipeline  
-- Built automation tools saving several hours of manual QA time a week Contributed to weekly technical book and video clubs up-leveling engineers across multiple teams 
-- Participated in technical leadership discussions and planing directing of division's engineering organization
+- Built automation tools saving several hours of weekly engineering time
+- Established a CI/CD pipeline that was later adopted by the entire division
+- Actively involved technical leadership discussions and learning groups (book clubs, etc)
+- Maintained responsibilities of Senior Engineer  
 
 _2/16 - 7/18_  
 Senior Software Engineer

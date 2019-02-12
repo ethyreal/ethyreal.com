@@ -4,7 +4,7 @@ date:   2019-02-09 18:28:00 -0800
 categories: composition functional
 ---
 
-> This is part of a remix of the [Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide).  I have translated examples into swift and updated text where appropriate.
+> This is part of a remix of the [Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide) (Chapter 5).  I have translated examples into swift and updated text where appropriate.
 
 Here's _compose_ :
 

@@ -1,7 +1,7 @@
 ---
 title:  "Forward Composition"
 date:   2019-02-12 09:32:00 -0800
-categories: composition functional
+categories: composition functional swift
 ---
 
 In the previous post I "remixed" a portion of the [composition chapter](/composition/functional/functional-husbandry/) in the [Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide).  While reading that chapter and later translating the direction of composition kept confusing me.  I wanted to convey the idea's as close as possible.. keeping all the great humor like:
@@ -10,7 +10,7 @@ In the previous post I "remixed" a portion of the [composition chapter](/composi
 And this does make sense, it reads right to left:
 
 ```swift
-let  = exclaim <<< toUpperCase <<< head <<< reverse
+let loudLastUpper = exclaim <<< toUpperCase <<< head <<< reverse
 loudLastUpper(["jumpkick", "roundhouse", "uppercut"]) //"UPPERCUT!"
 ```
 
@@ -48,8 +48,8 @@ I've heard this called `composeRight` or it could be a regular function called `
 
 ```swift
 func forwardCompose<A, B, C>(_ f: @escaping (A) -> B, _ g: @escaping (B) -> C) -> (A) -> C {
-    return { a in
-        g(f(a))
+    return { x in
+        g(f(x))
     }
 }
 ```
@@ -72,4 +72,7 @@ let loudLastUpper = reverse
                     >>> exclaim
 ```
 
+All the goodness from [functional husbandry](/composition/functional/functional-husbandry/) still applies, but now we are moving in the `right` direction (boo!).
+
+> Working code can be found in the Chapter 5 page of the [Mostly Adequate Swift Playground](https://github.com/ethyreal/mostly-adequate-guide-swift)
 

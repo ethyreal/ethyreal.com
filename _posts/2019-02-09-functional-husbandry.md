@@ -1,7 +1,7 @@
 ---
 title:  "Functional Husbandry"
 date:   2019-02-09 18:28:00 -0800
-categories: composition functional
+categories: composition functional swift
 ---
 
 > This is part of a remix of the [Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide) (Chapter 5).  I have translated examples into swift and updated text where appropriate.
@@ -119,3 +119,4 @@ let loudLastUpper = angry <<< last
 
  There's no right or wrong answers - we're just plugging our legos together in whatever way we please. Usually it's best to group things in a reusable way like `last` and `angry`. If familiar with Fowler's "[Refactoring](https://martinfowler.com/books/refactoring.html)", one might recognize this process as "[extract function](https://refactoring.com/catalog/extractFunction.html)" ...except without all the object state to worry about.
 
+> Working code can be found in the Chapter 5 page of the [Mostly Adequate Swift Playground](https://github.com/ethyreal/mostly-adequate-guide-swift)

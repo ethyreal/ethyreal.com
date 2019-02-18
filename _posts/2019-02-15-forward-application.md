@@ -111,3 +111,44 @@ moves |> reverse
         >>> toUpperCase
         >>> exclaim
 ```
+
+Now you might be wondinging how different this `apply` (`|>`) function is from `compose` (`>>>`)?  On the surface they are very similar, apply puts a function's argument in front where as compose calles one function with the result of another:
+
+```swift
+public func |> <A, B>(a: A, f: (A) -> B) -> B {
+    return f(a)
+}
+```
+Vs:
+
+```swift
+func >>> <A, B, C>(_ f: @escaping (A) -> B, _ g: @escaping (B) -> C) -> (A) -> C {
+    return { x in g(f(x)) }
+}
+```
+
+In some cases (like our example) you could easily replace one with the other:
+
+```swift
+["jumpkick", "roundhouse", "uppercut"]
+    |> reverse
+    |> head
+    |> toUpperCase
+    |> exclaim
+// "UPPERCUT!"
+
+// same result as:
+
+["jumpkick", "roundhouse", "uppercut"]
+    |> reverse
+    >>> head
+    >>> toUpperCase
+    >>> exclaim    
+// "UPPERCUT!"
+```
+
+In this use case I personally find the piped version easier to read than the composed. For inline logic or one offs this is great, easy to visualize. This doesn't mean compose doesn't have its uses too. Being able to form new functions, save them, pass them around is an incredibly powerful thing.
+
+> Working code can be found in the Chapter 5 page of the [Mostly Adequate Swift Playground](https://github.com/ethyreal/mostly-adequate-guide-swift)
+
+

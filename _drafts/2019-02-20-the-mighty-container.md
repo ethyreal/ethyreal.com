@@ -44,7 +44,7 @@ Let's make a few things clear before we move on:
 
 The reasons we're doing this will become clear as a mason jar, but for now, bear with me.
 
-## My First Functor"
+## My First Functor
 
 Once our value, whatever it may be, is in the container, we'll need a way to run functions on it.
 
@@ -77,7 +77,7 @@ We can work with our value without ever having to leave the `Container`. This is
 
 Wait a minute, if we keep calling `map`, it appears to be some sort of composition! What mathematical magic is at work here? Well chaps, we've just discovered *Functors*.
 
-> A Functor is a type that implements `map` and obeys some laws"
+> A Functor is a type that implements `map` and obeys some laws
 
 Yes, *Functor* is simply an interface with a contract. We could have just as easily named it *Mappable*, but now, where's the *fun* in that? Functors come from category theory and we'll look at the maths in detail toward the end of the chapter, but for now, let's work on intuition and practical uses for this bizarrely named interface.
 

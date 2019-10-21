@@ -18,6 +18,7 @@ _1999 - PRESENT_
 _7/18 - Present_  
 Principal Software Engineer
 
+- Architected a platform for rapid development of rentals features in iOS consumer apps
 - Built automation tools saving several hours of weekly engineering time
 - Established a CI/CD pipeline that was later adopted by the entire division
 - Actively involved technical leadership discussions and learning groups (book clubs, etc)
@@ -31,7 +32,8 @@ Senior Software Engineer
 - Rewrote core architecture components (Data, Networking, Routing)
 - Mentored team through code review, pair programming and book clubs
 
-[premieragent.zillow.com](http://premieragent.zillow.com), [Premier Agent App](https://itunes.apple.com/us/app/premier-agent-power-zillow/id489692273?mt=8&ign-mpt=uo%3D4)
+[trulia.com](https://www.trulia.com), [Trulia Real Estate App](https://apps.apple.com/app/id288487321), [Trulia Rentals App](https://apps.apple.com/us/app/trulia-rentals/id508163604), [premieragent.zillow.com](http://premieragent.zillow.com), [Premier Agent App](https://itunes.apple.com/us/app/premier-agent-power-zillow/id489692273?mt=8&ign-mpt=uo%3D4)
+
 
 
 ### Roambi (Mellmo Inc) ###

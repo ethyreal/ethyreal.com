@@ -11,12 +11,12 @@ Passionate software engineer with extensive experience in mobile and web applica
 
 ## Work History ##
 
-_1999 - PRESENT_
+_1999 - Present_
 
 
 ### ServiceNow ###
 
-_4/20 - Present_
+_7/14 - Present_   
 Senior Staff Software Engineer
 
 - Drove architecture changes that improved testability, code reuse and performance while reducing cognitive overhead
@@ -146,7 +146,7 @@ A developers skills should not be summed up as a laundry list... one merely grab
 ### Programming ###
 
 - Mobile
-	- iOS ( iPhone, iPad ), Objective-C, C, C++, Swift, UIKit, Core Animation, Core Graphics, Core Text, Core Data, Cocos2d, UIKit Dynamics, Networking
+	- Swift, Objective-C, C, C++, Combine, UIKit, Core Animation, Core Graphics, Core Text, Core Data, Cocos2d, UIKit Dynamics, Networking
 
 - Full Stack
 	- Server Side

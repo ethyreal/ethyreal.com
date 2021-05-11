@@ -13,9 +13,22 @@ Passionate software engineer with extensive experience in mobile and web applica
 
 _1999 - PRESENT_
 
+
+### ServiceNow ###
+
+_4/20 - Present_
+Senior Staff Software Engineer
+
+- Drove architecture changes that improved testability, code reuse and performance while reducing cognitive overhead
+- Introduced a composable caching framework that replaced legacy persistence logic
+- Reviewed changes in entire mobile org on both a strategic ( architecture board ) and tactical ( code reviews ) levels
+- Mentored as both technical lead for feature teams and through one on one mentorship 
+
+[Now Mobile](https://apps.apple.com/us/app/now-mobile/id1469616608), [ServiceNow Agent](https://apps.apple.com/us/app/servicenow-agent/id1446951408)
+
 ### Zillow Group ###
 
-_7/18 - Present_  
+_7/18 - 4/20_  
 Principal Software Engineer
 
 - Architected a platform for rapid development of rentals features in iOS consumer apps
@@ -33,7 +46,6 @@ Senior Software Engineer
 - Mentored team through code review, pair programming and book clubs
 
 [trulia.com](https://www.trulia.com), [Trulia Real Estate App](https://apps.apple.com/app/id288487321), [Trulia Rentals App](https://apps.apple.com/us/app/trulia-rentals/id508163604), [premieragent.zillow.com](http://premieragent.zillow.com), [Premier Agent App](https://itunes.apple.com/us/app/premier-agent-power-zillow/id489692273?mt=8&ign-mpt=uo%3D4)
-
 
 
 ### Roambi (Mellmo Inc) ###

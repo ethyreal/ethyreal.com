@@ -71,7 +71,7 @@ Mobile Software Engineer
 [tealium.com](http://www.tealium.com), [Collect Library](http://tealium.github.io/collect-ios/) ,  [TiQ Library](https://github.com/tealium/tealium-ios), [iOS Utiities](https://github.com/tealium/ios-utilities)
 
 
-### Mobile Systems Inc ###
+### MobiSystems Inc ###
 
 _6/12 - 7/14_  
 iOS Developer

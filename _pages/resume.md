@@ -13,10 +13,19 @@ Passionate software engineer with extensive experience in mobile and web applica
 
 _1999 - Present_
 
+### Zillow ###
+
+_9/21 - Present_   
+Principal Software Development Engineer
+
+- Standing on the sholders of giants
+
+[Zillow 3D Home](https://apps.apple.com/us/app/zillow-3d-home/id1265223425)
+
 
 ### ServiceNow ###
 
-_4/20 - Present_   
+_4/20 - 09/21_   
 Senior Staff Software Engineer
 
 - Drove architecture changes that improved testability, code reuse and performance while reducing cognitive overhead

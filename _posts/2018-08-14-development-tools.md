@@ -18,7 +18,7 @@ I recently had to update my machine and realized I never really had a list of to
 
 ### API Tools/Proxies
 
-- [Charles](https://www.charlesproxy.com) HTTP proxy, invaluable for debugging networking in apps.  The addition of an [iOS app](https://itunes.apple.com/us/app/charles-proxy/id1134218562?mt=8) makes on device debuging that much easier. 
+- [Proxyman](https://proxyman.io) HTTP proxy, invaluable for debugging networking in apps.  This seems to have become the new favorit over [Charles](https://www.charlesproxy.com), but both still get the job done.
 - [Postman](https://www.getpostman.com) is a great for exploring, document and debuging API calls
 
 ### Utilities

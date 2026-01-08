@@ -13,14 +13,26 @@ Passionate software engineer with extensive experience in mobile and web applica
 
 _1999 - Present_
 
-### Zillow ###
+### Zillow Group ###
 
-_9/21 - Present_   
+_10/24 - 8/25_  
 Principal Software Development Engineer
 
-- Standing on the sholders of giants
+- Improved and maintained the Zillow native interactive floor plan and 3D Home experiences
 
-[Zillow 3D Home](https://apps.apple.com/us/app/zillow-3d-home/id1265223425)
+_7/23 - 10/24_  
+Senior Software Development Manager
+
+- Managed through organizational changes and performance review cycles while maintaining top marks in manager surveys
+- Helped grow the 3D Home app team from 5 to 10
+- Planned and facilitated engaging quarterly on-sites
+
+_9/21 - 7/23_   
+Principal Software Development Engineer
+
+- Developed on-device image enhancement pipeline to increase the quality of home captures in the 3D Home app
+
+[Zillow](https://apps.apple.com/us/app/zillow-real-estate-rentals/id310738695), [Zillow 3D Home](https://apps.apple.com/us/app/zillow-3d-home/id1265223425)
 
 
 ### ServiceNow ###

@@ -6,7 +6,7 @@ permalink: /Résumé/
 
 ## Summary ##
 
-Passionate software engineer with extensive experience in mobile and web application development.  Strong desire to work with great people to build amazing products backed by clean code.
+Passionate software engineer and leader with extensive experience in mobile and web application development.  Strong desire to work with great people to build amazing products backed by clean code.
 
 
 ## Work History ##
@@ -24,7 +24,7 @@ _7/23 - 10/24_
 Senior Software Development Manager
 
 - Managed through organizational changes and performance review cycles while maintaining top marks in manager surveys
-- Helped grow the 3D Home app team from 5 to 10
+- Helped grow the 3D Home app team from 5 to 10, investing in the career growth of each individual contributor
 - Planned and facilitated engaging quarterly on-sites
 
 _9/21 - 7/23_   
